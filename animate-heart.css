@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+@-webkit-keyframes latido{
+  from
+	{
+		-webkit-transform:scale(.6,.6)  rotate(0deg);
+	}
+	25%
+	{
+		-webkit-transform:scale(1.2,1.2)  rotate(15deg);
+	}
+	50%
+	{
+		-webkit-transform:scale(1.8,1.8)  rotate(0deg);
+	}
+	75%
+	{
+		-webkit-transform:scale(2.4,2.4)  rotate(-15deg);
+	}
+	to
+	{
+		-webkit-transform: scale(2.8,2.8) rotate(0deg);
+	}
+}
+@-ms-keyframes latido{
+	from
+	{
+		-ms-transform:scale(.6,.6)  rotate(0deg);
+	}
+	25%
+	{
+		-ms-transform:scale(1.2,1.2)  rotate(15deg);
+	}
+	50%
+	{
+		-ms-transform:scale(1.8,1.8)  rotate(0deg);
+	}
+	75%
+	{
+		-ms-transform:scale(2.4,2.4)  rotate(-15deg);
+	}
+	to
+	{
+		-ms-transform: scale(2.8,2.8) rotate(0deg);
+	}
+}
+@-moz-keyframes latido{
+	from
+	{
+		-moz-transform:scale(.6,.6)  rotate(0deg);
+	}
+	25%
+	{
+		-moz-transform:scale(1.2,1.2)  rotate(15deg);
+	}
+	50%
+	{
+		-moz-transform:scale(1.8,1.8)  rotate(0deg);
+	}
+	75%
+	{
+		-moz-transform:scale(2.4,2.4)  rotate(-15deg);
+	}
+	to
+	{
+		-moz-transform: scale(2.8,2.8) rotate(0deg);
+	}
+}
+@-o-keyframes latido{
+	0%
+	{
+		-o-transform:scale(.6,.6)  rotate(0deg);
+	}
+	25%
+	{
+		-o-transform:scale(1.2,1.2)  rotate(15deg);
+	}
+	50%
+	{
+		-o-transform:scale(1.8,1.8)  rotate(0deg);
+	}
+	75%
+	{
+		-o-transform:scale(2.4,2.4)  rotate(-15deg);
+	}
+	100%
+	{
+		-o-transform: scale(2.8,2.8) rotate(0deg);
+	}
+}
+body{
+	background:pink;
+	background-image: -ms-radial-gradient(center 45deg, circle cover,pink,crimson);
+	background-image: -o-radial-gradient(center 45deg, circle cover, pink, crimson);
+	background-image: radial-gradient(center 45deg, circle cover, pink, crimson);
+	background-image: -moz-radial-gradient(center 45deg, circle cover, pink, crimson);
+	background-image: -webkit-gradient(radial,50% 50%,0,50% 50%,800,from(pink),to(crimson));
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size:16px;
+	text-align:center;
+}
+h2{
+	font-size:1em;
+	position:relative;
+	z-index:3;
+}
+h2{
+	font-size:3em;
+}
+h1{
+	-ms-animation:latido 1s infinite 1s alternate ease;
+	-ms-animation-play-state: running;
+	-o-animation:latido 1s infinite 1s alternate ease;
+	-o-animation-play-state: running;
+	-moz-animation:latido 1s infinite 1s alternate ease;
+	-moz-animation-play-state: running;
+	-webkit-animation:latido 1s infinite 1s alternate ease;
+	-webkit-animation-play-state: running;
+	font-size:2em;
+	left:47.5%;
+	top:48%;
+	z-index:2;
+	position:fixed;
+}
+p{
+	position:relative;
+	z-index:3;
+}
+#corazon{
+	-ms-animation:latido 2s infinite 1s alternate ease;
+	-ms-animation-play-state: running;
+	-o-animation:latido 2s infinite 1s alternate ease;
+	-o-animation-play-state: running;
+	-moz-animation:latido 2s infinite 1s alternate ease;
+	-moz-animation-play-state: running;
+	-webkit-animation:latido 2s infinite 1s alternate ease;
+	-webkit-animation-play-state: running;
+	left:43%;
+	height:180px;
+	width:200px;
+	position: fixed;
+	top:45%;
+	z-index:1;
+}
+#corazon:after,#corazon:before{
+	-ms-animation:cColor 2s infinite 1s alternate ease;
+	-ms-animation-play-state: running;
+	-o-animation:cColor 2s infinite 1s alternate ease;
+	-o-animation-play-state: running;
+	-moz-animation:cColor 2s infinite 1s alternate ease;
+	-moz-animation-play-state: running;
+	-webkit-animation:cColor 2s infinite 1s alternate ease;
+	-webkit-animation-play-state: running;
+	
+	background:red;
+	border-radius:50px 50px 0 0;
+	content:"";
+	height:160px;
+	left:100px;
+	position:absolute;
+	-ms-transform:rotate(-45deg);
+	-ms-transform-origin:0 100%;
+	
+	-o-transform:rotate(-45deg);
+	-o-transform-origin:0 100%;
+	
+	-moz-transform:rotate(-45deg);
+	-moz-transform-origin:0 100%;
+	
+	-webkit-transform:rotate(-45deg);
+	-webkit-transform-origin:0 100%;
+	width:100px;
+}
+#corazon:after
+{
+	left:0;
+	-ms-transform:rotate(45deg);
+	-ms-transform-origin:100% 100%;
+	
+	-o-transform:rotate(45deg);
+	-o-transform-origin:100% 100%;
+	
+	-moz-transform:rotate(45deg);
+	-moz-transform-origin:100% 100%;
+	
+	-webkit-transform:rotate(45deg);
+	-webkit-transform-origin:100% 100%;
+}
